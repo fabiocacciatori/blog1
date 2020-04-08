@@ -1,0 +1,102 @@
+
+      .containerMain {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 200px 100px 900px 200px;
+        grid-template-areas:
+          "hr"
+          "ba"
+          "ma"
+          "fr";
+          border: 5px solid red;
+      }
+      .containerContenuti {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 200px 200px 200px 200px;
+          grid-gap: 20px;
+
+          grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4";
+            border: 5px solid greenyellow;
+        }
+        .containerMenu{
+          display:flex;
+          flex-direction: column;
+           align-items:stretch;
+          justify-content:flex-start;
+          border: 2px solid yellow;
+        }
+      #icons {
+          display: none;
+        }
+      .scatola {
+        
+        border: 3px solid green;
+      }
+      .menuItem{
+        border: 3px solid lightgreen;
+        height: 70px;
+      }
+      #header {
+        grid-area: hr;
+      }
+      #banner {
+        grid-area: ba;
+      }
+      #icons {
+        grid-area: ic;
+      }
+      #main {
+        grid-area: ma;
+      }
+      #menu {
+        grid-area: me;
+      }
+      #footer {
+        grid-area: fr;
+      }
+      #blog1{
+          grid-area: p1;
+      }
+      #blog2{
+          grid-area: p2;
+      }
+      #blog3{
+          grid-area: p3;
+      }
+      #blog4{
+          grid-area: p4;
+      }
+      @media (min-width: 800px) {
+        .containerMain {
+          display: grid;
+          grid-template-columns: 200px 300px 300px;
+          grid-template-rows: 200px 100px 100px 700px 200px;
+          grid-template-areas:
+            "hr hr hr hr hr hr"
+            "ba ba ba ba ba ba"
+            "ic ic ic ic ic ic"
+            "me ma ma ma ma ma"
+            "fr fr fr fr fr fr";
+            border: 5px solid red;
+        }
+        .containerContenuti {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 300px 300px 300px 300px;
+          grid-template-areas:
+            "p1 p2"
+            "p3 p4";
+            grid-gap: 20px;
+
+            border: 5px solid greenyellow;
+        }
+        #icons {
+          display: block;
+        }
+      }
+    
