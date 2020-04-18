@@ -1,6 +1,13 @@
 aside {
   display: none;
 }
+cite{
+  font-size: 0.7em;
+  color: black;
+}
+#wiki{
+  color: black;
+}
 article {
   padding-left: 1em;
   padding-right: 1em;
